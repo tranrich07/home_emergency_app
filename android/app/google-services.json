@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1570608271",
+    "firebase_url": "https://home-emergency-app.firebaseio.com",
+    "project_id": "home-emergency-app",
+    "storage_bucket": "home-emergency-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1570608271:android:939d73acfd8204150f4cfa",
+        "android_client_info": {
+          "package_name": "com.example.home_emergency_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1570608271-3ubbmuup2ftlehbartjc5g98gsvreau1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmM5SWucrmg205cC0fBXtUgHicjx2bS1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1570608271-3ubbmuup2ftlehbartjc5g98gsvreau1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1570608271-t0bih4ule7eplhsbb87npmi26ojftnf3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.homeEmergencyApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
