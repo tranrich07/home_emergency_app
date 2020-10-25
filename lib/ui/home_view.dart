@@ -57,7 +57,7 @@ class _HomeViewState extends State<HomeView> {
       snapshot.docs.forEach((document) async {
         //print(document.data()["FirstName"]);
         if (document.data()["FirstName"] == requiredName) {
-          //print("It works");
+          print(document.data()["FirstName"]);
 //           var htmlContent = """
 // <!DOCTYPE html>
 // <html>
