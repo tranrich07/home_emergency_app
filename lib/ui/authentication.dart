@@ -25,7 +25,7 @@ class _AuthenticationState extends State<Authentication> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Title
+            // Title -------------------------------------------------
             Text(
               "Home Emergency",
               style: TextStyle(
