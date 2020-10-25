@@ -50,4 +50,8 @@
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Allow access to microphone</string>
 </dict>
+<key>LSApplicationQueriesSchemes</key>
+<array>
+  <string>tel</string>
+</array>
 </plist>

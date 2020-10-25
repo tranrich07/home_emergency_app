@@ -34,6 +34,8 @@ dependencies:
   html: ^0.14.0+4
   pdf: ^1.11.2
   flutter_email_sender: ^3.0.1
+  flutter_phone_direct_caller: ^1.0.1
+  url_launcher: ^5.7.8
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

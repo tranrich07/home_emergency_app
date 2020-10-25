@@ -10,6 +10,8 @@ import 'package:flutter_html_to_pdf/flutter_html_to_pdf.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
+import 'package:flutter_phone_direct_caller/flutter_phone_direct_caller.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeView extends StatefulWidget {
   @override
@@ -21,8 +23,6 @@ class _HomeViewState extends State<HomeView> {
   File _image;
   final picker = ImagePicker();
 
-  // PDF
-
   // Get img from gallary
   _imgFromCamera() async {
     final image =
@@ -33,7 +33,25 @@ class _HomeViewState extends State<HomeView> {
     });
   }
 
-  void _emergency() {
+  Future<void> _makePhoneCall(String contact, bool direct) async {
+    if (direct == true) {
+      bool res = await FlutterPhoneDirectCaller.callNumber(contact);
+      print(res);
+    } else {
+      String telScheme = 'tel:$contact';
+
+      if (await canLaunch(telScheme)) {
+        await launch(telScheme);
+      } else {
+        throw 'Could not launch $telScheme';
+      }
+    }
+  }
+
+  void _emergency() async {
+
+    _makePhoneCall("7806048907", true);
+
     // _imgFromCamera();
 
     // FirebaseFirestore.instance
